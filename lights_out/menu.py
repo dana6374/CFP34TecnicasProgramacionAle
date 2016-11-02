@@ -1,3 +1,5 @@
+
+
 def mostrarMenu(modo):
     if modo=="1":
         print("Aleatorio")
