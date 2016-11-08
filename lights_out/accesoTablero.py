@@ -1,17 +1,14 @@
 
 
 def letraValida(letra):
-    letrasValidas = ("a","b", "c", "d", "e")
-    for letra in letrasValidas:
-        letrasValidas==letra
-    return letra
+    letrasValidas = ("a", "b", "c", "d", "e")
+    return letra in letrasValidas
 
 
 def numeroValido(numero):
+
     numerosValidos = (1, 2, 3, 4, 5)
-    for numero in numerosValidos:
-        numerosValidos==numero
-    return numero
+    return numero in numerosValidos
 
 def longitudValida(coordenadas):
     return len(coordenadas) == 2
@@ -31,4 +28,6 @@ def validarCoordenadas(coordenadas):
         return coordenadaInvalida
 
     return {"fila": 0, "columna": 0}
+
+
 
