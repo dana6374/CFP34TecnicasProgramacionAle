@@ -12,17 +12,16 @@ def numeroValido(numero):
     return numero in numerosValidos
 
 
-def validarCoordenadas(coordenadas):
-    coordenadaInvalida = {"fila": -1, "columna": -1}
+def esCoordenadaValida(coordenadas):
 
     if not longitudValida(coordenadas):
-        return coordenadaInvalida
+        return False
 
     if not letraValida(coordenadas[0]):
-        return coordenadaInvalida
+        return False
 
     if not numeroValido(coordenadas[1]):
-        return coordenadaInvalida
+        return False
 
-    return {"fila": 0, "columna": 0}
+    return True
 
