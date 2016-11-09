@@ -11,4 +11,3 @@ def jugar():
         conversorCoordenadas.convertirCoordenadas(coordenadasDelUsuario)
     else:
         jugar()
-
