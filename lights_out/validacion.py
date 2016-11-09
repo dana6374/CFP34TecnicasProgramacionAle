@@ -3,7 +3,6 @@ def longitudValida(coordenadas):
 
 
 def letraValida(letra):
-    letra = letra.lower()
     letrasValidas = ("a", "b", "c", "d", "e")
     return letra in letrasValidas
 
@@ -18,7 +17,6 @@ def esCoordenadaValida(coordenadas):
     if not longitudValida(coordenadas):
         print("la coordenada ingresada no es válida")
         return False
-
 
     if not letraValida(coordenadas[0]):
         print("la coordenada ingresada no es válida")
