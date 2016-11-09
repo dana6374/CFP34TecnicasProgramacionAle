@@ -3,6 +3,7 @@ def longitudValida(coordenadas):
 
 
 def letraValida(letra):
+    letra = letra.lower()
     letrasValidas = ("a", "b", "c", "d", "e")
     return letra in letrasValidas
 
