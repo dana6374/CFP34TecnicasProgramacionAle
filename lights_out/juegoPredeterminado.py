@@ -1,5 +1,4 @@
 import coordenadas
-import validacion
 
 def jugar():
 
@@ -10,6 +9,5 @@ def jugar():
         print(coordenadasDelUsuario)
         # TODO en este punto que ya se que es valida llamo a convertirCoordenada
     else:
-        print("la coordenada ingresada no es válida")
         jugar()
 
