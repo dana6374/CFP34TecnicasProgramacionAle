@@ -1,4 +1,4 @@
-# El parámetro "coordenades" que recibe ésta función es del tipo STRING y de 2 Caracteres
+# El parámetro "coordenadas" que recibe ésta función es del tipo STRING y mide 2 Caracteres
 
 import validacion
 coordenadasValida = validacion.esCoordenadaValida(coordenadas)
