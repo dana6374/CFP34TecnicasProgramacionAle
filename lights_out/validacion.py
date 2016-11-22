@@ -16,15 +16,18 @@ def esCoordenadaValida(coordenadas):
 
     if not longitudValida(coordenadas):
         print("la coordenada ingresada no es válida")
+        print ("")
         return False
 
     if not letraValida(coordenadas[0]):
         print("la coordenada ingresada no es válida")
+        print("")
         return False
 
 
     if not numeroValido(coordenadas[1]):
         print("la coordenada ingresada no es válida")
+        print("")
         return False
 
 

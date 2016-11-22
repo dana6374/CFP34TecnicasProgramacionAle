@@ -7,6 +7,7 @@ import tableroNiveles
 def jugar():
 
     print("Jugando en modo predeterminado !")
+    print ("")
 #Tengo que mostrar el tablero del nivel1
     tablero.imprimirTablero(tableroNiveles.estructuraTablero1)
 
