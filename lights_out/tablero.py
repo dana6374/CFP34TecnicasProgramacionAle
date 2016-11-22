@@ -1,10 +1,7 @@
+fila=[" ", "A", "B", "C", "D", "E"]
 
+def imprimirTablero (tablero):
+    print(fila)
+    for elemento in tablero:
 
-def imprimirTablero ():
-    tableroppal = [["o", "o", "o", "o", "o"],
-                   ["o", "o", "o", "o", "o"],
-                   ["o", "o", "o", "o", "o"],
-                   ["o", "o", "o", "o", "o"],
-                   ["o", "o", "o", "o", "o"]]
-    for elemento in tableroppal:
         print(elemento)
