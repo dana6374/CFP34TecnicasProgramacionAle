@@ -3,17 +3,15 @@ fila=[" ", "A", "B", "C", "D", "E"]
 
 def imprimirTablero (tablero):
 
-    todaLaFilaEnteraJuntita = ""
-    #todaLaFilaEnteraJuntita = "    A B C D E"
+    filaResultado  = " "
 
     for letra in fila:
-        print(letra)
+        filaResultado = filaResultado + " " + letra
 
-
-    print(todaLaFilaEnteraJuntita)
+    print(filaResultado)
 
 
     for i, elemento in enumerate(tablero):
-        print(i, "|",  elemento[0][0])
+        print(i+1, "|",  elemento[0][0])
 
     print("")
