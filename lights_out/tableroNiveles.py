@@ -33,10 +33,3 @@ estructuraTablero5 = [[".", ".", ".", "o", "o"],
                       [".", ".", ".", ".", "."],
                       ["o", "o", ".", ".", "."],
                       ["o", "o", ".", ".", "."]]
-
-def nivel():
-
-
-def imprimirtablero (estructura):
-    for elemento in estructura
-        print(elemento)
