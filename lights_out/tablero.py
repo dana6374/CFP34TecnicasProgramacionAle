@@ -12,6 +12,9 @@ def imprimirTablero (tablero):
 
 
     for i, elemento in enumerate(tablero):
-        print(i+1, "|",  elemento[0][0])
+        filaLuz =  " |"
 
+        for led in elemento:
+            filaLuz = filaLuz + led + " "
+        print (str(i + 1) + " " + filaLuz)
     print("")
