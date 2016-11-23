@@ -1,4 +1,4 @@
-import validacion
+import validacionCoordenadas
 import conversorCoordenadas
 
 def solicitarCoordenadas():
