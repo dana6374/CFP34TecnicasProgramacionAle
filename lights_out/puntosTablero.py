@@ -8,7 +8,6 @@ PRE: recibe una tupla con las coordenadas validas del usuario traducidasd a nues
 """
 def generarPuntos(coordenada,tablero):
 
-    print(coordenada[0], coordenada[1])
 
     puntosVecinos = []
 
@@ -20,27 +19,22 @@ def generarPuntos(coordenada,tablero):
 
     if punto1[0] >0 and punto1[0] <= len(tablero):
         if punto1[1] >0 and punto1[1]<= (len(tablero[0])-1):
-            print(punto1)
-            puntosVecinos.append(punto1)
+           puntosVecinos.append(punto1)
 
 
     if punto2[0] >0 and punto2[0] <= len(tablero):
         if punto2[1] >0 and punto2[1]<= (len(tablero[0])-1):
-            print(punto2)
-            puntosVecinos.append(punto2)
+           puntosVecinos.append(punto2)
 
 
     if punto3[0] >0 and punto3[0] <= len(tablero):
         if punto3[1] >0 and punto3[1]<= (len(tablero[0])-1):
-            print(punto3)
-            puntosVecinos.append(punto3)
+           puntosVecinos.append(punto3)
 
 
 
     if punto4[0] >0 and punto4[0] <= len(tablero):
         if punto4[1] >=0 and punto4[1]<= (len(tablero[0])-1):
-            print(punto4)
             puntosVecinos.append(punto3)
 
     return puntosVecinos
-    print (puntosVecinos)

@@ -3,23 +3,22 @@ import puntosTablero
 import tablero
 import tableroNiveles
 
-
 def jugar():
 
-    print("Jugando en modo predeterminado !")
+    print ("Jugando en modo predeterminado !")
     print ("")
     #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
     tablero.imprimirTablero(tableroNiveles.estructuraTablero1)
 
-
     coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
-    print("")
-    print("LA COORDENADA Es VALIDA !!!! ", coordenadasDelUsuario)
+    print ("")
+    print ("La coordenada: ", coordenadasDelUsuario)
+    print ("Es valida")
+    print ("")
 
 
-    # TODO cambiar tableroNiveles.estructuraTablero1 por la copia del tablero del jugador
+    puntosVecinos = puntosTablero.generarPuntos(coordenadasDelUsuario,tableroNiveles.estructuraTablero1)
 
-    puntosTablero.generarPuntos(coordenadasDelUsuario,tableroNiveles.estructuraTablero1)
+    def cambiarPuntos(puntosVecinos):
 
 
-    #todo juego
