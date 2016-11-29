@@ -2,6 +2,13 @@ import coordenadas
 import puntosTablero
 import tablero
 import tableroNiveles
+import copy
+
+def cambiarPuntos(puntosVecinos, tableroACambiar):
+
+    print(tableroACambiar)
+
+
 
 def jugar():
 
@@ -22,8 +29,10 @@ def jugar():
 
     puntosVecinos = puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
 
-    cambiarPuntos(puntosVecinos)
+    cambiarPuntos(puntosVecinos,miTablero)
 
-def cambiarPuntos(puntosVecinos):
+
+
+
 
 
