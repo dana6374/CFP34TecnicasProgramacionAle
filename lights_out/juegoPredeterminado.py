@@ -7,8 +7,11 @@ def jugar():
 
     print ("Jugando en modo predeterminado !")
     print ("")
+
+    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
+
     #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
-    tablero.imprimirTablero(tableroNiveles.estructuraTablero1)
+    tablero.imprimirTablero(miTablero)
 
     coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
     print ("")
@@ -17,8 +20,10 @@ def jugar():
     print ("")
 
 
-    puntosVecinos = puntosTablero.generarPuntos(coordenadasDelUsuario,tableroNiveles.estructuraTablero1)
+    puntosVecinos = puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
 
-    def cambiarPuntos(puntosVecinos):
+    cambiarPuntos(puntosVecinos)
+
+def cambiarPuntos(puntosVecinos):
 
 
