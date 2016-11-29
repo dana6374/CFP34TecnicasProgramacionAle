@@ -13,9 +13,12 @@ def jugar():
 
 
     coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
-    print("LA COORDENADA FUE VALIDA !!!! ", coordenadasDelUsuario)
+    print("")
+    print("LA COORDENADA Es VALIDA !!!! ", coordenadasDelUsuario)
+
 
     # TODO cambiar tableroNiveles.estructuraTablero1 por la copia del tablero del jugador
+
     puntosTablero.generarPuntos(coordenadasDelUsuario,tableroNiveles.estructuraTablero1)
 
 
