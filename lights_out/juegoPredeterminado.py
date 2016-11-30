@@ -3,6 +3,8 @@ import puntosTablero
 import tablero
 import tableroNiveles
 import copy
+import controlJuego
+
 
 def cambiarPuntos(puntos, tableroACambiar):
 
@@ -17,26 +19,30 @@ def jugar():
 
     print ("Jugando en modo predeterminado !")
     print ("")
+    print ("movimiento")
+
+    intentos = 15
 
     miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
 
     #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
+    while intentos > 0:
+        tablero.imprimirTablero(miTablero)
 
-    tablero.imprimirTablero(miTablero)
-
-    coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
-    print ("")
-    print ("La coordenada: ", coordenadasDelUsuario)
-    print ("Es valida")
-    print ("")
+        coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
+        print ("")
+        print ("La coordenada: ", coordenadasDelUsuario)
+        print ("Es valida")
+        print ("")
 
 
-    puntosACambiar= puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
+        puntosACambiar= puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
 
-    puntosACambiar.append(coordenadasDelUsuario)
+        puntosACambiar.append(coordenadasDelUsuario)
 
-    cambiarPuntos(puntosACambiar, miTablero)
-    tablero.imprimirTablero(miTablero)
+        cambiarPuntos(puntosACambiar, miTablero)
+        intentos = intentos-1
+
 
 
 
