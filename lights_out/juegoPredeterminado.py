@@ -4,9 +4,12 @@ import tablero
 import tableroNiveles
 import copy
 
-def cambiarPuntos(puntosVecinos, tableroACambiar):
+def cambiarPuntos(puntos, tableroACambiar):
 
-    print(tableroACambiar)
+    conversorDeSimbolos = {".":"0", "0":"."}
+
+    for i in puntos
+    tableroACambiar[puntos[0] puntos[1]] = conversorDeSimbolos[tableroACambiar[puntos[0] puntos[1]]
 
 
 
@@ -18,6 +21,7 @@ def jugar():
     miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
 
     #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
+
     tablero.imprimirTablero(miTablero)
 
     coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
@@ -27,9 +31,11 @@ def jugar():
     print ("")
 
 
-    puntosVecinos = puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
+    puntosACambiar= puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
 
-    cambiarPuntos(puntosVecinos,miTablero)
+    puntosACambiar.append(coordenadasDelUsuario)
+
+    cambiarPuntos(puntosACambiar, miTablero)
 
 
 
