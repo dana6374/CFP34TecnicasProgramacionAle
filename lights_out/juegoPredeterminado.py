@@ -6,10 +6,10 @@ import copy
 
 def cambiarPuntos(puntos, tableroACambiar):
 
-    conversorDeSimbolos = {".":"0", "0":"."}
+    conversorDeSimbolos = {".":"o", "o":"."}
 
-    for i in puntos
-    tableroACambiar[puntos[0] puntos[1]] = conversorDeSimbolos[tableroACambiar[puntos[0] puntos[1]]
+    for punto in puntos:
+        tableroACambiar[punto[0]][punto[1]] = conversorDeSimbolos[tableroACambiar[punto[0]][punto[1]]]
 
 
 
@@ -36,6 +36,7 @@ def jugar():
     puntosACambiar.append(coordenadasDelUsuario)
 
     cambiarPuntos(puntosACambiar, miTablero)
+    tablero.imprimirTablero(miTablero)
 
 
 
