@@ -31,7 +31,7 @@ def jugar():
 
     intentos = 15
 
-    while intentos > 0:
+    while intentos > 0 and not controlJuego.nivelCompleto(tablero):
 
         tablero.imprimirTablero(miTablero)
 
@@ -47,11 +47,12 @@ def jugar():
 
         cambiarPuntos(puntosACambiar, miTablero)
 
-
-
         intentos = intentos-1
 
-
+    if controlJuego.nivelCompleto(tablero):
+        print("nivel ganado")
+    else:
+        print("perdí")
 
 
 
