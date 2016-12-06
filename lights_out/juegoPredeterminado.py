@@ -3,7 +3,7 @@ import puntosTablero
 import tablero
 import tableroNiveles
 import copy
-import controlJuego
+
 
 
 def cambiarPuntos(puntos, tableroACambiar):
@@ -27,6 +27,9 @@ def jugar():
 
     #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
     while intentos > 0:
+
+        puntaje= 0
+
         tablero.imprimirTablero(miTablero)
 
         coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
