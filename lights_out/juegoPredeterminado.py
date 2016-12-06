@@ -3,6 +3,7 @@ import puntosTablero
 import tablero
 import tableroNiveles
 import copy
+import controlJuego
 
 
 
@@ -21,17 +22,15 @@ def jugar():
     print ("")
     print ("movimiento")
 
-    intentos = 15
+
 
     # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
 
-    variableNivel=""
-
-    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero + variableNivel)
+    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
 
-    while intentos > 0:
+    while contador():
 
         puntaje= 0
 
@@ -48,6 +47,9 @@ def jugar():
         puntosACambiar.append(coordenadasDelUsuario)
 
         cambiarPuntos(puntosACambiar, miTablero)
+
+
+
         intentos = intentos-1
 
 

@@ -1,7 +1,7 @@
 import conversorCoordenadas
 import tablero
 
-#coordenadasOriginales= conversorCoordenadas(coordenadas)
+# coordenadasOriginales= conversorCoordenadas(coordenadas)
 """
 PRE: recibe una tupla con las coordenadas validas del usuario traducidasd a nuestra estructura
 
