@@ -23,9 +23,14 @@ def jugar():
 
     intentos = 15
 
-    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
+    # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
 
-    #Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
+    variableNivel=""
+
+    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero + variableNivel)
+    # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
+
+
     while intentos > 0:
 
         puntaje= 0
@@ -34,8 +39,7 @@ def jugar():
 
         coordenadasDelUsuario = coordenadas.solicitarCoordenadas()
         print ("")
-        print ("La coordenada: ", coordenadasDelUsuario)
-        print ("Es valida")
+        print ("La coordenada: ", coordenadasDelUsuario, "es valida")
         print ("")
 
 
