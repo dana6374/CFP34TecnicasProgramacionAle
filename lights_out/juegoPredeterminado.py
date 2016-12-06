@@ -31,7 +31,7 @@ def jugar():
 
     intentos = 15
 
-    while intentos > 0 :
+    while intentos > 0:
 
         tablero.imprimirTablero(miTablero)
 
