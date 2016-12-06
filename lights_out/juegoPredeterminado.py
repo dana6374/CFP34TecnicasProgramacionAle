@@ -29,10 +29,9 @@ def jugar():
     miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
+    intentos = 15
 
-    while contador():
-
-        puntaje= 0
+    while intentos > 0 :
 
         tablero.imprimirTablero(miTablero)
 
