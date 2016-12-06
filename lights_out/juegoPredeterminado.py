@@ -52,6 +52,3 @@ def jugar():
         print("perdí")
 
 
-
-
-
