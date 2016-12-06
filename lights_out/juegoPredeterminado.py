@@ -22,8 +22,6 @@ def jugar():
     print ("")
     print ("movimiento")
 
-
-
     # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
 
     miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
@@ -31,7 +29,7 @@ def jugar():
 
     intentos = 15
 
-    while intentos > 0 and not controlJuego.nivelCompleto(tablero):
+    while intentos > 0 and not controlJuego.nivelCompleto(miTablero):
 
         tablero.imprimirTablero(miTablero)
 
@@ -39,7 +37,6 @@ def jugar():
         print ("")
         print ("La coordenada: ", coordenadasDelUsuario, "es valida")
         print ("")
-
 
         puntosACambiar= puntosTablero.generarPuntos(coordenadasDelUsuario, miTablero)
 
@@ -49,7 +46,7 @@ def jugar():
 
         intentos = intentos-1
 
-    if controlJuego.nivelCompleto(tablero):
+    if controlJuego.nivelCompleto(miTablero):
         print("nivel ganado")
     else:
         print("perdí")
