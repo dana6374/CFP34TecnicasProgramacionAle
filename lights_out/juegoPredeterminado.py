@@ -6,7 +6,6 @@ import copy
 import controlJuego
 
 
-
 def cambiarPuntos(puntos, tableroACambiar):
 
     conversorDeSimbolos = {".":"o", "o":"."}
@@ -20,17 +19,14 @@ print("")
 
 def jugar():
 
-    puntaje = 0
-    nivel = 1
-    intentos = 15
 
-    miTablero = copy.deepcopy(tableroNiveles.llamarNivel[nivel])
+    miTablero = copy.deepcopy(tableroNiveles.llamarNivel[controlJuego.nivel])
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
 
-    print ("Usted está en el nivel: ", nivel)
+    print ("Usted está en el nivel: ", controlJuego.nivel)
 
-    while intentos > 0 and not controlJuego.nivelCompleto(miTablero):
+    while controlJuego.intentos > 0 and not controlJuego.nivelCompleto(miTablero):
 
         tablero.imprimirTablero(miTablero)
 
@@ -45,24 +41,24 @@ def jugar():
 
         cambiarPuntos(puntosACambiar, miTablero)
 
-        intentos = intentos-1
-        print("Quedan", intentos, "intentos")
+        controlJuego.intentos = controlJuego.intentos-1
+        print("Quedan", controlJuego.intentos, "intentos")
         print("")
 
     if controlJuego.nivelCompleto(miTablero):
 
         print("nivel ganado")
         print("")
-        puntaje = puntaje + 500
-        print("Puntaje final: ", puntaje)
+        controlJuego.puntaje[controlJuego.nivel] = controlJuego.puntaje[controlJuego.nivel] + 500
+        print("Puntaje del nivel: ", controlJuego.puntaje[controlJuego.nivel])
         print("")
-        print ("Ud finalizó el nivel:", nivel)
+        print ("Ud finalizó el nivel:", controlJuego.nivel)
         print("")
-        nivel = nivel + 1
+        controlJuego.nivel = controlJuego.nivel + 1
 
         jugar()
 
     else:
         print("perdí")
-        puntaje = punjate - 300
-        print ("Puntaje final: ", puntaje)
+        controlJuego.puntaje[controlJuego.nivel] = controlJuego.punjate[controlJuego.nivel] - 300
+        print ("Puntaje final: ", controlJuego.puntaje[controlJuego.nivel])
