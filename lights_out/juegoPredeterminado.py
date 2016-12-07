@@ -20,7 +20,6 @@ def jugar():
 
     print ("Jugando en modo predeterminado !")
     print ("")
-    print ("movimiento")
 
     # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
 
@@ -32,6 +31,8 @@ def jugar():
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
     intentos = 15
+
+    print ("Usted está en el nivel: ", nivel)
 
     while intentos > 0 and not controlJuego.nivelCompleto(miTablero):
 
@@ -61,6 +62,7 @@ def jugar():
         print("Puntaje final: ", puntaje)
         nivel = nivel + 1
 
+        jugar()
     else:
         print("perdí")
         puntaje = punjate - 300

@@ -1,6 +1,7 @@
 import juegoPredeterminado
 
 
+#guardar datos del usuario
 
 def nivelCompleto(miTablero):
 
