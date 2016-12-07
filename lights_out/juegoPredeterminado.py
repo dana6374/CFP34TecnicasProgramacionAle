@@ -25,7 +25,7 @@ def jugar():
 
 
     print ("Usted está en el nivel: ", controlJuego.nivel)
-
+    print("")
     while controlJuego.intentos > 0 and not controlJuego.nivelCompleto(miTablero):
 
         tablero.imprimirTablero(miTablero)
