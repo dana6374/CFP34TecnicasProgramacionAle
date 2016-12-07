@@ -15,22 +15,18 @@ def cambiarPuntos(puntos, tableroACambiar):
         tableroACambiar[punto[0]][punto[1]] = conversorDeSimbolos[tableroACambiar[punto[0]][punto[1]]]
 
 
+print("Jugando en modo predeterminado !")
+print("")
 
 def jugar():
 
-    print ("Jugando en modo predeterminado !")
-    print ("")
-
-    # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
-
-
     puntaje = 0
     nivel = 1
+    intentos = 15
 
     miTablero = copy.deepcopy(tableroNiveles.llamarNivel[nivel])
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
-    intentos = 15
 
     print ("Usted está en el nivel: ", nivel)
 
@@ -53,16 +49,19 @@ def jugar():
         print("Quedan", intentos, "intentos")
         print("")
 
-
     if controlJuego.nivelCompleto(miTablero):
 
         print("nivel ganado")
         print("")
         puntaje = puntaje + 500
         print("Puntaje final: ", puntaje)
+        print("")
+        print ("Ud finalizó el nivel:", nivel)
+        print("")
         nivel = nivel + 1
 
         jugar()
+
     else:
         print("perdí")
         puntaje = punjate - 300
