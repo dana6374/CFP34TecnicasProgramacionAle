@@ -24,9 +24,11 @@ def jugar():
 
     # Tengo que mostrar el tablero del nivel1 Declarar variable y hacer una copia.
 
-    puntaje=0
 
-    miTablero = copy.deepcopy(tableroNiveles.estructuraTablero1)
+    puntaje = 0
+    nivel = 1
+
+    miTablero = copy.deepcopy(tableroNiveles.llamarNivel[nivel])
     # donde dice estructuraTablero1, el 1 es una variable para nivel. Ese nro tiene que ser una variable.
 
     intentos = 15
@@ -47,7 +49,8 @@ def jugar():
         cambiarPuntos(puntosACambiar, miTablero)
 
         intentos = intentos-1
-
+        print("Quedan", intentos, "intentos")
+        print("")
 
 
     if controlJuego.nivelCompleto(miTablero):
@@ -56,11 +59,9 @@ def jugar():
         print("")
         puntaje = puntaje + 500
         print("Puntaje final: ", puntaje)
-
+        nivel = nivel + 1
 
     else:
         print("perdí")
         puntaje = punjate - 300
         print ("Puntaje final: ", puntaje)
-
-

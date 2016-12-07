@@ -1,6 +1,7 @@
 import juegoPredeterminado
 
 
+
 def nivelCompleto(miTablero):
 
     for i in miTablero:
