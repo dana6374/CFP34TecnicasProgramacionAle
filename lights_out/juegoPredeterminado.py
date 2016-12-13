@@ -57,8 +57,15 @@ def jugar():
         controlJuego.intentos = 15
         print("cantidad de intentos para éste nivel: ", controlJuego.intentos)
 
-
-        jugar()
+         if controlJuego.nivel == 6:
+            print("Finalizó todos los niveles del modo predeterminado")
+            print("Puntaje nivel 1: ", controlJuego.puntaje[1])
+            print("Puntaje nivel 2: ", controlJuego.puntaje[2])
+            print("Puntaje nivel 3: ", controlJuego.puntaje[3])
+            print("Puntaje nivel 4: ", controlJuego.puntaje[4])
+            print("Puntaje nivel 5: ", controlJuego.puntaje[5])
+         else:
+             jugar()
 
     else:
         print("juego perdido")
