@@ -4,6 +4,7 @@ import tablero
 import tableroNiveles
 import copy
 import controlJuego
+import menu
 
 
 def cambiarPuntos(puntos, tableroACambiar):
@@ -19,7 +20,22 @@ print("")
 
 def jugar():
 
-    miTablero = copy.deepcopy(tableroNiveles.llamarNivel[controlJuego.nivel])
+
+    if controlJuego.nivel == 6:
+         print("Felicitaciones, Finalizó todos los niveles del modo predeterminado")
+         print("")
+         print("Puntaje nivel 1: ", controlJuego.puntaje[1])
+         print("Puntaje nivel 2: ", controlJuego.puntaje[2])
+         print("Puntaje nivel 3: ", controlJuego.puntaje[3])
+         print("Puntaje nivel 4: ", controlJuego.puntaje[4])
+         print("Puntaje nivel 5: ", controlJuego.puntaje[5])
+         puntajeTotal= controlJuego.puntaje[1] + controlJuego.puntaje[2] + controlJuego.puntaje[3] + controlJuego.puntaje[4] + controlJuego.puntaje[5]
+         print("")
+         print("puntaje total: ", puntajeTotal)
+         print("")
+         menu.mostrarMenu()
+    else:
+        miTablero = copy.deepcopy(tableroNiveles.llamarNivel[controlJuego.nivel])
 
 
     print ("Usted está ahora en el nivel: ", controlJuego.nivel)
@@ -57,15 +73,9 @@ def jugar():
         controlJuego.intentos = 15
         print("cantidad de intentos para éste nivel: ", controlJuego.intentos)
 
-         if controlJuego.nivel == 6:
-            print("Finalizó todos los niveles del modo predeterminado")
-            print("Puntaje nivel 1: ", controlJuego.puntaje[1])
-            print("Puntaje nivel 2: ", controlJuego.puntaje[2])
-            print("Puntaje nivel 3: ", controlJuego.puntaje[3])
-            print("Puntaje nivel 4: ", controlJuego.puntaje[4])
-            print("Puntaje nivel 5: ", controlJuego.puntaje[5])
-         else:
-             jugar()
+        jugar()
+
+
 
     else:
         print("juego perdido")
