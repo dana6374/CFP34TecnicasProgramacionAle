@@ -60,5 +60,5 @@ def jugar():
 
     else:
         print("perdí")
-        controlJuego.puntaje[controlJuego.nivel] = controlJuego.punjate[controlJuego.nivel] - 300
+        controlJuego.puntaje[controlJuego.nivel] = controlJuego.puntaje[controlJuego.nivel] - 300
         print ("Puntaje final: ", controlJuego.puntaje[controlJuego.nivel])
