@@ -5,17 +5,19 @@ def mostrarMenu():
     if modo == "1":
         print("")
         print("Alta de registros")
-        alta.consulta()
+        alta.ejec()
     elif modo == "2":
         print("")
         print("baja de registros")
-        baja.consulta()
+        baja.ejec()
     elif modo == "3":
         print("")
         print("modificacion de registros")
+        modifiacion.ejec()
     elif modo == "4":
         print("")
         print("consulta de registros")
+        consulta.ejec()
     elif modo == "5":
         print("")
         print("Salir del sistema")
