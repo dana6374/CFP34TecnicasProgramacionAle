@@ -1,4 +1,5 @@
-import leerarchivo()
+import leerarchivo
+import menuBaseDatos
 
 print(" ")
 print("ABMC BD")
