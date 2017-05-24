@@ -7,5 +7,5 @@ infile=open('bd.sql', 'r')
 
 for line in infile:
     c.execute(line)
-# Cerramos el fichero.
+# Cierro el archivo.
 infile.close()

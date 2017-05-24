@@ -8,7 +8,7 @@ def AltaDato()
     if modo == 1
     c.execute('INSERT INTO FABRICANTES(NOMBRE) VALUES("{}");'.format(nombre))
     base.commit()
-    #PUEDE SER QUE LA OPCION DEL USUARIOS SEA EN LA VARIABLE OPC?
+    #PUEDE SER QUE LA OPCION DEL USUARIOS ESTÉ EN LA VARIABLE OPC?
 
     if modo == 2
     c.execute ('INSERT INTO (NOMBRE, PRECIO, FAB) VALUES ("{}", {}, (SELECT ID FROM FABRICANTES WHERE (NOMBRE = "{}")'.format(NOMBRE, PRECIO, FABRICANTE))
