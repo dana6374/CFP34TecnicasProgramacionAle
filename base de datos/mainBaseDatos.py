@@ -1,4 +1,4 @@
-
+import leerarchivo()
 
 print(" ")
 print("ABMC BD")
