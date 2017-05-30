@@ -1,8 +1,5 @@
-import leerarchivo
+import creadorBaseDatos
 import menuBaseDatos
 
-print(" ")
-print("ABMC BD")
-print(" ")
-
+creadorBaseDatos.inicializarBaseDeDatos()
 menuBaseDatos.mostrarMenu()

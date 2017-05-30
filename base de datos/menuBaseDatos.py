@@ -1,5 +1,10 @@
 
 def mostrarMenu():
+
+    print(" ")
+    print("Alta Baja Y Modificacion de la Base de Datos")
+    print(" ")
+
     modo = input(str("Elija el modo: 1 = ALTA, 2 = BAJA, 3 = MODIFICACION, 4 = CONSULTA, 5 = SALIR "))
 
     if modo == "1":
