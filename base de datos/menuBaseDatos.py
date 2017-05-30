@@ -1,4 +1,6 @@
 
+import alta
+
 def mostrarMenu():
 
     print(" ")
@@ -10,7 +12,7 @@ def mostrarMenu():
     if modo == "1":
         print("")
         print("Alta de registros")
-        #alta.ejec()
+        alta.ejec()
     elif modo == "2":
         print("")
         print("baja de registros")

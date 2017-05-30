@@ -1,5 +1,5 @@
-import creadorBaseDatos
+import baseDatos
 import menuBaseDatos
 
-creadorBaseDatos.inicializarBaseDeDatos()
+baseDatos.inicializarBaseDeDatos()
 menuBaseDatos.mostrarMenu()
