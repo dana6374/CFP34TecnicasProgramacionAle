@@ -16,11 +16,11 @@ def mostrarMenu():
     elif modo == "2":
         print("")
         print("baja de registros")
-        #baja.ejec()
+        baja.ejec()
     elif modo == "3":
         print("")
         print("modificacion de registros")
-        #modifiacion.ejec()
+        modifiacion.ejec()
     elif modo == "4":
         print("")
         print("consulta de registros")

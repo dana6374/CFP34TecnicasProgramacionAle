@@ -1,8 +1,8 @@
-
 import baseDatos
+import menuBaseDatos
 
 def ejec():
-    modo= input(str("1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 5= Volver a la opción anterior"))
+    modo= input(str("1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 4= Volver a la opción anterior"))
 
     opciones = {1: "FABRICANTES",
                 2: "ARTICULOS",
@@ -13,13 +13,17 @@ def ejec():
         baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO FABRICANTES(NOMBRE) VALUES("{}");'.format(nombre))
         baseDatos.baseDeDatos.commit()
 
-    if modo == "2":
+    elif modo == "2":
         nombre = input(str("Ingrese el nombre, precio del Articulo. Si existe, no se modifica "))
-        baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO ARTICULOS(NOMBRE) VALUES("{}");'.format(nombre))
+        baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO ARTICULOS(NOMBRE, PRECIO, ART_FAB) VALUES("{}",{},{});'.format(nombre))
         baseDatos.baseDeDatos.commit()
 
-        nombreArticulo = "prueba"
-        precioArticulo = 10
-        fabricanteId = 10
-        baseDatos.getCursorDeBaseDedatos().execute ('INSERT INTO (NOMBRE, PRECIO, FAB) VALUES ("{}", {}, (SELECT ID FROM FABRICANTES WHERE (NOMBRE = "{}")'.format(nombreArticulo, precioArticulo, fabricanteId))
-        baseDatos.commit()
+    elif modo =="3":
+        nombre =input(str("ingrere los datos del Cliente (Apellido y Nombre, Dirección, Teléfono, email, CUIL)"))
+        baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO CLIENTE (ApellidoNombre, Direccion, telefono, email, CUIL) VALUES ("{}","{}","{}",{},"{}");'.format(nombre))
+        baseDatos.baseDeDatos.commit()
+
+    else:
+        print("")
+        print("opción inválida")
+        menuBaseDatos.mostrarMenu()
