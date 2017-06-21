@@ -1,8 +1,8 @@
 import baseDatos
 import alta
-import Baja
+import baja
 import modificación
-import facturación
+import menuFacturación
 
 def clearScreen():
     import os
@@ -19,20 +19,23 @@ def mostrarMenu():
     print("Alta Baja Y Modificacion de Base de Datos")
     print(" ")
 
-    modo = input(str("Elija el modo: 1 = ALTA, 2 = BAJA, 3 = MODIFICACION, 4 = CONSULTA, 5 = fACTURACIÓN, 6 = SALIR "))
+    modo = input(str("Elija el modo: 1 = ALTA, 2 = BAJA, 3 = MODIFICACION, 4 = CONSULTA, 5 = FACTURACIÓN, 6 = SALIR "))
 
     if modo == "1":
         print("")
         print("Alta de registros")
         alta.ejec()
+
     elif modo == "2":
         print("")
         print("baja de registros")
         baja.ejec()
+
     elif modo == "3":
         print("")
         print("modificacion de registros")
         modifiacion.ejec()
+
     elif modo == "4":
         print("")
         print("consulta de registros")
@@ -40,14 +43,15 @@ def mostrarMenu():
 
     elif modo == "5":
         print("")
-        print("Salir del sistema")
-        exit()
+        print("Facturación")
 
     elif modo == "6":
         print("")
         print("Salir del sistema")
         exit()
+
     else:
         print("")
         print("opción inválida")
+        clearScreen()
         mostrarMenu()
