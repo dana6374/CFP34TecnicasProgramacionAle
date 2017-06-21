@@ -2,7 +2,7 @@ import baseDatos
 import menuBaseDatos
 
 def ejec():
-    modo= input(str("1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 4= Volver a la opción anterior"))
+    modo= input(str("1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 4= Volver al menú anterior"))
 
     opciones = {1: "FABRICANTES",
                 2: "ARTICULOS",
@@ -20,10 +20,12 @@ def ejec():
 
     elif modo =="3":
         nombre =input(str("ingrere los datos del Cliente (Apellido y Nombre, Dirección, Teléfono, email, CUIL)"))
-        baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO CLIENTE (ApellidoNombre, Direccion, telefono, email, CUIL) VALUES ("{}","{}","{}",{},"{}");'.format(nombre))
+        baseDatos.getCursorDeBaseDedatos().execute('INSERT INTO CLIENTE (ApellidoNombre, Direccion, telefono, email, CUIL) VALUES ("{}","{}",{},"{}",{});'.format(nombre))
         baseDatos.baseDeDatos.commit()
 
     else:
         print("")
-        print("opción inválida")
+        print("menú anterior")
+        print("")
+        menuBaseDatos.clearScreen()
         menuBaseDatos.mostrarMenu()
