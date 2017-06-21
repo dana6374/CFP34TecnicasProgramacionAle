@@ -1,23 +1,22 @@
 import baseDatos
 import alta
-import baja
-import modificacion
+import Baja
+import modificación
 import facturación
 
 def clearScreen():
     import os
     if os.name == "nt":
-        os.system("cls")
+       os.system("cls")
     elif os.name == "posix":
-        os.system("clear")
+         os.system("clear")
     else:
-        raise "No se puede limpiar la pantalla"
-        print("No se pudo borrar la pantalla->")
+         print("<-No se pudo borrar la pantalla->")
 
 def mostrarMenu():
 
     print(" ")
-    print("Alta Baja Y Modificacion de la Base de Datos")
+    print("Alta Baja Y Modificacion de Base de Datos")
     print(" ")
 
     modo = input(str("Elija el modo: 1 = ALTA, 2 = BAJA, 3 = MODIFICACION, 4 = CONSULTA, 5 = fACTURACIÓN, 6 = SALIR "))
