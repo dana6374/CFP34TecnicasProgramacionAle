@@ -1,5 +1,5 @@
-import baseDatos
-import menuBaseDatos
+import dbCursor
+import dbMenu
 
 def ejec():
     modo= input(str("Eliminar: 1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 5 = Volver al menú anterior"))

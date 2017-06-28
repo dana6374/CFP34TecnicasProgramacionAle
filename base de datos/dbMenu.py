@@ -1,8 +1,12 @@
-import baseDatos
-import alta
-import baja
-import modificación
-import menuFacturación
+import dbCursor
+import dbAlta
+import dbBaja
+import dbModificación
+import facturacionMenu
+
+
+baseDatos.inicializarBaseDeDatos()
+mostrarMenu()
 
 def clearScreen():
     import os

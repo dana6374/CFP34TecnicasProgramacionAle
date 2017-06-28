@@ -1,5 +1,5 @@
-import baseDatos
-import menuBaseDatos
+import dbCursor
+import dbMenu
 
 baseDatos.inicializarBaseDeDatos()
 menuBaseDatos.mostrarMenu()

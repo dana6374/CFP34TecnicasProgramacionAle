@@ -1,3 +1,6 @@
+import dbCursor
+import dbMenu
+
 def ejec()
     opcion = input(str("seleccione: 1 = Estructura de Base de datos, 2 = listado de fabricantes, 3= listado de Artículos, 4= lista de articulos y fabricantes"))
 
