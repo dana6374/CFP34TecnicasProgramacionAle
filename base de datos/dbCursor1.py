@@ -1,14 +1,12 @@
-import sqlite3
-
-
+import psycopg2
 
 baseDeDatos = None
 
 def inicializarBaseDeDatos():
-
+    conn_string = "host='10.1.4.115' dbname='alejandra' user='postgres' password='qvg802'"
     global baseDeDatos
 
-    baseDeDatos = sqlite3.connect('pi2.db')
+    baseDeDatos = psycopg2.connect(conn_string)
 
     cursorBaseDeDatos = baseDeDatos.cursor()
 

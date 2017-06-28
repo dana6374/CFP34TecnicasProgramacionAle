@@ -1,4 +1,4 @@
-import dbCursor
+import dbCursor1
 import dbAlta
 import dbBaja
 import dbModificación
