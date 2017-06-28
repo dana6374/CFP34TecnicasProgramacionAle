@@ -7,7 +7,14 @@ def mostrarMenu():
     print("Facturación")
     print(" ")
 
-    modo = input(str("Elija el modo: 1 = Generar Factura, Consultar Factura: 21 = Por Número, 22 = por Cliente, 23 = por período,  3= SALIR "))
+    modo = input(str("Elija el modo: 1 = Generar Factura, Consultar Factura: 2.1 = Por Número, 2.2 = por Cliente, 2.3 = por período,  3= SALIR "))
+
+
+    opciones = {1: "Generar_factura",
+                2: "Consultar_Factura_ID",
+                3: "Consultar_Factura_Cliente"
+                4: "Consultar_Factura_Perido"}
+
 
     if modo == "1":
         print("")

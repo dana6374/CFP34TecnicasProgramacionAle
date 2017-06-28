@@ -21,6 +21,12 @@ def mostrarMenu():
 
     modo = input(str("Elija el modo: 1 = ALTA, 2 = BAJA, 3 = MODIFICACION, 4 = CONSULTA, 5 = FACTURACIÓN, 6 = SALIR "))
 
+    opciones = {1: "ALTA",
+                2: "BAJA",
+                3: "MODIFICACIONES"
+                4: "CONSULTAS"
+                5: "FACTURACION"}
+
     if modo == "1":
         print("")
         print("Alta de registros")
