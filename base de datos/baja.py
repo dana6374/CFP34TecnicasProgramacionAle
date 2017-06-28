@@ -2,7 +2,7 @@ import baseDatos
 import menuBaseDatos
 
 def ejec():
-    modo= input(str("Eliminar: 1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 5= Volver al menú anterior"))
+    modo= input(str("Eliminar: 1 = Fabricante, 2 = Articulo y precio, 3 = Cliente, 5 = Volver al menú anterior"))
 
     opciones = {1: "FABRICANTES",
                 2: "ARTICULOS",
