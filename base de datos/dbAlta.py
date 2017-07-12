@@ -27,5 +27,5 @@ def ejec():
         print("")
         print("menú anterior")
         print("")
-        menuBaseDatos.clearScreen()
-        menuBaseDatos.mostrarMenu()
+        dbMenu.clearScreen()
+        dbMenu.mostrarMenu()

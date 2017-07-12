@@ -1,11 +1,11 @@
 import dbCursor1
-import dbAlta
-import dbBaja
-import dbModificación
-import facturacionMenu
+#import dbAlta
+#import dbBaja
+#import dbModificación
+#import facturacionMenu
 
 
-baseDatos.inicializarBaseDeDatos()
+dbCursor1.inicializarBaseDeDatos()
 mostrarMenu()
 
 def clearScreen():
@@ -27,8 +27,8 @@ def mostrarMenu():
 
     opciones = {1: "ALTA",
                 2: "BAJA",
-                3: "MODIFICACIONES"
-                4: "CONSULTAS"
+                3: "MODIFICACIONES",
+                4: "CONSULTAS",
                 5: "FACTURACION"}
 
     if modo == "1":

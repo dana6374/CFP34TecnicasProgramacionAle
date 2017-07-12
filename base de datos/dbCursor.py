@@ -1,11 +1,9 @@
 import sqlite3
 
-
-
 baseDeDatos = None
 
-def inicializarBaseDeDatos():
 
+def inicializarBaseDeDatos():
     global baseDeDatos
 
     baseDeDatos = sqlite3.connect('pi2.db')
@@ -20,7 +18,7 @@ def inicializarBaseDeDatos():
     baseDeDatos.commit()
     archivoSql.close()
 
-def getCursorDeBaseDedatos():
-    #global baseDeDatos
-    return baseDeDatos.cursor()
 
+def getCursorDeBaseDedatos():
+    # global baseDeDatos
+    return baseDeDatos.cursor()

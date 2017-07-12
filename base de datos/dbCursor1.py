@@ -3,7 +3,7 @@ import psycopg2
 baseDeDatos = None
 
 def inicializarBaseDeDatos():
-    conn_string = "host='10.1.4.115' dbname='alejandra' user='postgres' password='qvg802'"
+    conn_string = "host='10.1.4.115' dbname='alejandra' user='postgres' password='alejandra'"
     global baseDeDatos
     global cursorBaseDeDatos
     baseDeDatos = psycopg2.connect(conn_string)
